@@ -11,6 +11,7 @@ import { menus } from '../menus';
 export class MenuComponent implements OnInit{
 
     name = '';
+    icon = '';
 
     constructor(
         private route: ActivatedRoute
@@ -19,6 +20,7 @@ export class MenuComponent implements OnInit{
     ngOnInit(){
         this.route.paramMap.subscribe(params => {
             this.name = menus[Number(params.get('i'))].name;    
+            this.icon = menus[Number(params.get('i'))].icon;    
         })
     }
 

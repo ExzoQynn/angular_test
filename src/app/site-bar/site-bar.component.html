@@ -2,13 +2,13 @@
     <div class="col-2">
         <ul class="nav flex-column" style="background-color:rgb(116, 245, 116)">
             <li class="nav-item" *ngFor="let menus of menus; index as i ">
-                <a class="nav-link"  [routerLink]="['/menu' , i]"><i class="fas fa-home"></i> {{menus.name}}</a>
+                <a class="nav-link" [routerLink]="['/menu' , i]">
+                    <font [innerHTML]="menus.icon"></font> {{menus.name}}</a>
             </li>
-           
+
         </ul>
     </div>
     <div class="col-10">
 
     </div>
 </div>
-

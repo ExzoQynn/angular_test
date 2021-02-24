@@ -1,20 +1,29 @@
-a{
+body {
+    background-color: rgb(187, 241, 187);
+    font-family: 'Kanit', sans-serif;
+}
+
+a {
     text-decoration: none;
     color: black;
     font-size: 22px;
     line-height: 50px;
 }
 
-i{
+i {
     padding-right: 5px;
     padding-top: 5px;
 }
 
-ul{
+ul {
     height: 100%;
     position: absolute;
 }
 
-li:hover{
-    background-color: rgb(255, 255, 255);
+li:hover {
+    background-color: rgb(187, 241, 187);
+}
+
+font {
+    font-size: 35px;
 }

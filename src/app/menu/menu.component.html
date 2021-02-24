@@ -1,12 +1,14 @@
-
-<div class="row">
+<div class="row mt-5">
     <div class="col-2">
 
     </div>
     <div class="col-10">
         <div *ngIf='name'>
-            {{name}}
+            <div class="inline-gorup">
+                <font [innerHTML]="icon" class="me-3"> </font>
+                <font>{{name}}</font>
+            </div>
         </div>
-
+        <hr>
     </div>
 </div>
